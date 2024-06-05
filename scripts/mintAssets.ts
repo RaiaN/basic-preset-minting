@@ -19,12 +19,8 @@ const mint = async (provider: Provider): Promise<TransactionResponse> => {
   const requests = [
     {
       to: process.env.RECIPIENT_ONE!,
-      tokenIds: [1, 2],
-    },
-    {
-      to: process.env.RECIPIENT_TWO!,
-      tokenIds: [3],
-    },
+      tokenIds: [1, 2, 3, 4]
+    }
   ];
 
   // The network has introduced a minimum gas price of 100 Gwei to protect it against SPAM traffic, ensure it can process transactions efficiently and remain cost-effective.
